@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SP — Frontend Developer Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="portfolio.css"/>
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div id="toast">✓ Message sent successfully!</div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">
+      <div class="logo-icon">VL</div>
+      <span>VL</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-btn" onclick="toggleTheme()">☀️</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-inner fade-up">
+      <div class="hero-left">
+        <div class="badge-pill">✨ Welcome to my portfolio</div>
+        <h1>Hi, I'm<br><span class="hero-name">Venkata Laxmi Valle</span></h1>
+        <p class="hero-desc">I have mostly worked on building websites using HTML, CSS, JavaScript, and WordPress, and
+          also build UI for React applications with exposure to React JS. With 3 years of experience, I turn ideas into
+          reality using modern technologies. I'm passionate about clean code, smooth user experiences, and solving
+          real-world problems through innovative solutions.</p>
+        <div class="status-badges">
+          <span class="status-badge"><span class="dot dot-purple"></span>Full-time Ready</span>
+          <span class="status-badge"><span class="dot dot-green"></span>Available for Remote Work</span>
+          <span class="status-badge"><span class="dot dot-blue"></span>Open to Freelance</span>
+        </div>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View Projects →</a>
+          <!-- <a href="#contact" class="btn-secondary">📄 Resume</a> -->
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-ring">
+          <div class="profile-inner">👨‍💻</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
+  <section id="services">
+    <div class="section-inner">
+      <h2 class="section-title fade-up">What I Do</h2>
+      <p class="section-sub fade-up">I specialize in creating engaging digital experiences with a focus on both
+        aesthetics and functionality.</p>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <span class="service-icon">🌐</span>
+          <span class="bg-icon">🌐</span>
+          <h3>Web Development</h3>
+          <p>Creating responsive and performance-optimized websites with modern technologies including Html5, CSS3,
+            React JS
+            and Bootstrap.</p>
+        </div>
+        <div class="service-card fade-up">
+          <span class="service-icon">🎨</span>
+          <span class="bg-icon">🎨</span>
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive and beautiful user interfaces with a focus on user experience using Figma and modern
+            design principles.</p>
+        </div>
+        <div class="service-card fade-up">
+          <span class="service-icon">📱</span>
+          <span class="bg-icon">📱</span>
+          <h3>WordPress & CMS</h3>
+          <p>Building and customizing WordPress sites with theme development, plugin integration, ongoing
+            maintenance support and deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MILESTONES -->
+  <section id="milestones">
+    <div class="section-inner" style="text-align:center;">
+      <div class="milestone-badge" style="display:inline-flex;">🏆 Achievements Unlocked</div>
+      <h2 class="milestone-title fade-up">Milestones & Recognition</h2>
+      <p class="section-sub fade-up">A showcase of professional achievements, skills, and milestones earned through
+        dedication and hard work.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;text-align:left;">
+        <div class="milestone-card fade-up">
+          <div class="milestone-card-header">
+            <div class="milestone-left">
+              <div class="milestone-icon mi-teal">📅</div>
+              <h4>Experienced Developer</h4>
+            </div>
+            <span class="milestone-badge-sm"
+              style="color:var(--purple);border-color:rgba(168,85,247,0.3);background:rgba(168,85,247,0.1);">3
+              Years</span>
+          </div>
+          <p>3 years of professional development experience</p>
+          <div class="achieved">⭐ Achieved</div>
+        </div>
+        <div class="milestone-card fade-up">
+          <div class="milestone-card-header">
+            <div class="milestone-left">
+              <div class="milestone-icon mi-blue">🖥️</div>
+              <h4>Projects Completed</h4>
+            </div>
+            <span class="milestone-badge-sm">10+</span>
+          </div>
+          <p>Successfully delivered 10+ comprehensive digital solutions</p>
+          <div class="achieved">⭐ Achieved</div>
+        </div>
+        <!-- <div class="milestone-card fade-up">
+          <div class="milestone-card-header">
+            <div class="milestone-left">
+              <div class="milestone-icon mi-green">🏆</div>
+              <h4>Projects Completed</h4>
+            </div>
+            <span class="milestone-badge-sm">8+</span>
+          </div>
+          <p>Built and launched 8+ full-stack applications</p>
+          <div class="achieved">⭐ Achieved</div>
+        </div> -->
+
+        <!-- <div class="milestone-card fade-up">
+          <div class="milestone-card-header">
+            <div class="milestone-left">
+              <div class="milestone-icon mi-purple">💡</div>
+              <h4>Innovation Ideas</h4>
+            </div>
+          </div>
+          <p>Contributed innovative ideas in hackathons within organization</p>
+          <div class="achieved">⭐ Achieved</div>
+        </div> -->
+        <div class="milestone-card fade-up">
+          <div class="milestone-card-header">
+            <div class="milestone-left">
+              <div class="milestone-icon mi-yellow">⭐</div>
+              <h4>Client Favorite</h4>
+            </div>
+            <span class="milestone-badge-sm"
+              style="color:#f59e0b;border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.1);">5 ⭐</span>
+          </div>
+          <p>Maintained excellent client satisfaction rating</p>
+          <div class="achieved">⭐ Achieved</div>
+        </div>
+        <!-- <div class="milestone-card fade-up"
+          style="background:var(--card2);display:flex;align-items:center;justify-content:center;border-style:dashed;min-height:130px;">
+          <div style="text-align:center;color:var(--muted);">
+            <div style="font-size:2rem;margin-bottom:8px;">🚀</div>
+            <div style="font-size:0.85rem;">More coming soon...</div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- STATS -->
+      <div class="stats-row fade-up">
+        <div class="stat-item">
+          <!-- <div class="stat-num-circle sc-blue">1</div> -->
+          <div class="stat-num" data-target="10">0+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <!-- <div class="stat-num-circle sc-green">2</div> -->
+          <div class="stat-num" data-target="3">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <!-- <div class="stat-num-circle sc-purple">3</div> -->
+          <div class="stat-num" data-target="7">0+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-item">
+          <!-- <div class="stat-num-circle sc-yellow">4</div> -->
+          <div class="stat-num">5.0 <span class="stat-star">⭐</span></div>
+          <div class="stat-label">Client Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner fade-up">
+      <div class="about-left">
+        <div class="profile-ring" style="width:320px;height:320px;animation:float 5s ease-in-out infinite;">
+          <div class="profile-inner" style="font-size:5rem;">👨‍💻</div>
+        </div>
+      </div>
+      <div>
+        <h2>About Me</h2>
+        <p>Experienced Front-end Developer with 3 years of expertise in building responsive, user-friendly websites. I
+          specialize in converting designs into high-quality code using HTML5, CSS3, Bootstrap, and JavaScript, ensuring
+          cross-browser compatibility and optimal performance.</p>
+        <p>Proficient in WordPress theme customization, plugin management, and updates, with hands-on experience in
+          React.js for dynamic UI development. I excel in collaborative environments, working closely with design and
+          backend teams to deliver seamless user experiences and maintain websites through updates and bug fixes.</p>
+        <div class="about-btns">
+          <a href="#contact" class="btn-primary">Contact Me →</a>
+          <!-- <a href="#" class="btn-secondary">📄 Resume</a> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="exp-section fade-up">
+        <h2>My Experience</h2>
+        <div class="exp-item">
+          <div class="exp-header">
+            <h3>Front end developer @ Varun Digital Media Pvt Ltd</h3>
+            <span class="exp-date">2023 – Present</span>
+          </div>
+          <p>Working as a front end developer. I am responsible for developing and maintaining websites
+            using HTML5, CSS3, Javascript, Wordpress and React Js.</p>
+        </div>
+      </div>
+      <div class="exp-section fade-up">
+        <h2>Education</h2>
+        <div class="exp-item">
+          <div class="exp-header">
+            <h3>Bachelor of Technology </h3>
+            <span class="exp-date exp-date-purple">2016 – 2020</span>
+          </div>
+          <div class="school">RGUKT, AP IIIT </div>
+          <div class="location">Nuzvid, Andhra Pradesh, India</div>
+          <p>Completed my B.Tech with a focus on web development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <h2 class="section-title fade-up">My Projects</h2>
+      <p class="section-sub fade-up">A collection of my recent work spanning websites, WordPress sites, and interactive
+        experiences.</p>
+      <div class="projects-grid">
+        <div class="project-card fade-up">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#0d1524,#1a2540);">
+            <span style="font-size:5rem;">🤖</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-label">AI Avatar Chatbot</div>
+          </div>
+          <div class="project-info">
+            <p>AI-powered avatar chatbot platform with interactive conversations, customizable avatars, and seamless
+              integration for websites and applications.</p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Bootstrap</span><span
+                class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <!-- <button class="proj-btn">GitHub</button> -->
+              <!-- <button class="proj-btn proj-btn-fill">Live Demo</button> -->
+              <a href="https://avatarchatbots.ai/" target="_blank" class="proj-btn proj-btn-fill">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card fade-up">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#111,#1a1a2e);">
+            <span style="font-size:5rem;">👥</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-label">Talent Scan</div>
+          </div>
+          <div class="project-info">
+            <p>AI-driven talent scanning and recruitment platform featuring advanced matching algorithms, resume
+              parsing,
+              and user-friendly interface for efficient hiring processes.</p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Bootstrap</span><span
+                class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <!-- <button class="proj-btn">GitHub</button> -->
+              <a href="https://talentscan.ai/" target="_blank" class="proj-btn proj-btn-fill">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card fade-up">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a2e,#2d1a5e);">
+            <span style="font-size:5rem;">📱</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-label">Varun Digital Media</div>
+          </div>
+          <div class="project-info">
+            <p>Professional digital media company website showcasing services, portfolio, client testimonials, and
+              modern design with responsive layout for optimal user experience.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">CSS3</span><span class="tag">HTML5</span>
+            </div>
+            <div class="project-links">
+              <!-- <button class="proj-btn">GitHub</button>
+              <button class="proj-btn proj-btn-fill">Live Demo</button> -->
+              <a href="https://www.varundigitalmedia.com/" target="_blank" class="proj-btn proj-btn-fill">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card fade-up">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#0a1628,#162844);">
+            <span style="font-size:5rem;">🏢</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-label">SPG America</div>
+          </div>
+          <div class="project-info">
+            <p>Corporate website for SPG America built with custom WordPress theme, featuring advanced customization,
+              SEO optimization, plugin integration, and fully responsive design.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">CSS3</span><span class="tag">HTML5</span>
+            </div>
+            <div class="project-links">
+              <!-- <button class="proj-btn">GitHub</button>
+              <button class="proj-btn proj-btn-fill">Live Demo</button> -->
+              <a href="https://www.spgamerica.com/" target="_blank" class="proj-btn proj-btn-fill">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card fade-up">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#0d1a12,#1a3020);">
+            <span style="font-size:5rem;">🏠</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-label">Sankalp</div>
+          </div>
+          <div class="project-info">
+            <p>Real estate website for Sankalp Realty featuring property listings, advanced search functionality,
+              property details, and modern responsive UI design.</p>
+            <div class="project-tags">
+              <span class="tag">WordPress</span><span class="tag">Plugins</span><span class="tag">Theme
+                Customization</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sankalprealty.us/" target="_blank" class="proj-btn proj-btn-fill">Live Demo</a>
+
+              <!-- <button class="proj-btn">GitHub</button>
+              <button class="proj-btn proj-btn-fill">Live Demo</button> -->
+            </div>
+          </div>
+        </div>
+        <div class="project-card fade-up">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1a1000,#302010);">
+            <span style="font-size:5rem;">💻</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-label">Prospect Infosystem</div>
+          </div>
+          <div class="project-info">
+            <p>Professional website for Prospect Infosystem showcasing IT services, software solutions, company
+              portfolio,
+              and contact information with clean, modern design.</p>
+            <div class="project-tags">
+              <span class="tag">WordPress</span><span class="tag">Plugins</span><span class="tag">Theme
+                Customization</span>
+            </div>
+            <div class="project-links">
+              <a href="https://prospectinfosystem.com/" target="_blank" class="proj-btn proj-btn-fill">Live Demo</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <h2 class="section-title fade-up">My Skills</h2>
+      <p class="section-sub fade-up">I've developed expertise in various technologies and methodologies over my career,
+        with a focus on front-end development and user experience.</p>
+      <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:22px;" class="fade-up">Technical Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-card fade-up">
+          <div class="skill-header">
+            <div class="skill-logo sl-wp">WP</div>
+            <h3>WordPress</h3>
+          </div>
+          <div class="skill-meta"><span>Proficiency</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width:85%;background:linear-gradient(90deg,#21759b,#1a5f7a);"></div>
+          </div>
+          <div class="skill-note">Theme customization, plugins, Elementor</div>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-header">
+            <div class="skill-logo sl-js">JS</div>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-meta"><span>Proficiency</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width:95%;background:linear-gradient(90deg,#f7df1e,#e2b400);"></div>
+          </div>
+          <div class="skill-note">Modern ES6+, functional programming</div>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-header">
+            <div class="skill-logo sl-react">⚛</div>
+            <h3>React</h3>
+          </div>
+          <div class="skill-meta"><span>Proficiency</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width:90%;background:linear-gradient(90deg,#61dafb,#0ea5e9);"></div>
+          </div>
+          <div class="skill-note">React hooks, context API</div>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-header">
+            <div class="skill-logo sl-angular">H</div>
+            <h3>HTML5</h3>
+          </div>
+          <div class="skill-meta"><span>Proficiency</span><span class="skill-pct">96%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width:90%;background:linear-gradient(90deg,#dd0031,#c3002f);"></div>
+          </div>
+          <div class="skill-note">Semantic markup, forms, multimedia, accessibility</div>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-header">
+            <div class="skill-logo sl-css">CSS</div>
+            <h3>CSS & Bootstrap</h3>
+          </div>
+          <div class="skill-meta"><span>Proficiency</span><span class="skill-pct">92%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width:92%;background:linear-gradient(90deg,#00c8ff,#0ea5e9);"></div>
+          </div>
+          <div class="skill-note">Responsive design, Bootstrap grid, animations</div>
+        </div>
+
+      </div>
+
+      <div class="tools-section fade-up">
+        <h3>Tools & Other Skills</h3>
+        <div class="tools-grid">
+          <div class="tool-chip">🌿 Git & GitHub</div>
+          <div class="tool-chip">🔌 REST APIs</div>
+          <div class="tool-chip">📱 Cross-browser</div>
+          <div class="tool-chip">🚀 Performance</div>
+          <div class="tool-chip">🛠️ VS Code</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-title fade-up">Get In Touch</h2>
+      <p class="section-sub fade-up">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+      <div class="contact-inner fade-up">
+        <div class="contact-left">
+          <h2>Let's Work Together</h2>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            Feel free to reach out!</p>
+          <div class="contact-info-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val">laxmivalle120@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="ci-label">Location</div>
+              <div class="ci-val">Hyderabad, India</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <div class="ci-label">LinkedIn</div>
+              <div class="ci-val">https://www.linkedin.com/in/venkata-laxmi-valle/</div>
+            </div>
+          </div>
+          <!-- <div class="contact-info-item">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <div class="ci-label">GitHub</div>
+              <div class="ci-val">github.com/surendra-ponguru</div>
+            </div>
+          </div> -->
+        </div>
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="John" />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Doe" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com" />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Project Inquiry" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button class="submit-btn" onclick="sendMessage()">Send Message </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <div class="logo-icon" style="width:32px;height:32px;font-size:0.75rem;">VL</div>
+      <span>Venkata laxmi Valle</span>
+    </div>
+    <div class="footer-copy">© 2024 Venkata laxmi Valle. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+ <script src="portfolio.js">
+
+ </script>
+</body>
+
+</html>
